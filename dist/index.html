@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="allcontainer">
+        <div class="left">
+            <h1>To-Do-List</h1>
+            <form class="userInput">
+                <label for="title">Title:</label>
+                <input type="text" class="title">
+                <div></div>
+                <label for="description">description:</label>
+                <textarea class="description"></textarea>
+                <label for="dueDate">Due Date</label>
+                <input type="datetime-local" class="dueDate">
+                <label for="priority">Choose a priority:</label>
+                <select name="priority" class="priority">
+                    <option value="High">High</option>
+                    <option value="Mid">Mid</option>
+                    <option value="Low">Low</option>
+                </select>
+                <label></label>
+                <input type="submit" value="Submit">
+            </form>
+
+
+            <form class="Projects_Choice">
+                <div>Choose your directory</div>
+                <label for="all">All</label>
+                <input type="radio" class="all" name="selection">
+                <label for="notall">notall</label>
+                <input type="radio" class="notall" name="selection">
+            </form>
+
+            <form class="userInputProject">
+                <label for="projectName">Add Project</label>
+                <input type="text" class="projectName">
+                <input type="submit" value="Submit">
+            </form>
+        
+
+         
+
+        </div>
+
+        <div class="right">
+
+
+        </div>
+
+    </div>
+
+
+
+<script src="./main.js"></script>
+</body>
+</html>

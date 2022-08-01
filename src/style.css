@@ -1,0 +1,53 @@
+
+
+.allcontainer{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+.left{
+    background-color: tomato;
+    height: 900px;
+    
+}
+.left>h1{
+    text-align: center;
+}
+.userInput>label, button{
+  display: block;
+}
+.userInputProject{
+    padding-top: 20px;
+}
+.Projects_Choice{
+    padding-top: 20px;
+
+}
+
+.right{
+    padding-top: 30px;
+}
+.right div{
+    min-height: 50px;
+    margin-bottom:  10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 25px;
+
+    
+    
+}
+
+.onetodo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.High{
+background-color: red;
+}
+.Mid{
+    background-color: rgb(255, 111, 0);
+}
+.Low{
+    background-color: yellow;
+}
