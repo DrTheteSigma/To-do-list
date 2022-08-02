@@ -3,7 +3,7 @@ export function ProjectAdder(){
     let classesarray=["All"]
     form.addEventListener("submit", (e)=>{
         e.preventDefault()
-
+    
         const input = document.querySelector(".projectName").value
         //main form
         const directory = document.querySelector(".Projects_Choice")
@@ -20,8 +20,6 @@ export function ProjectAdder(){
         classesarray.push(input)
         directory.appendChild(element)
         directory.appendChild(elementradio)
-
-
        
     })
     return classesarray

@@ -9,9 +9,7 @@ export function Theclass(){
             this.projectname=projectname
         }
     
-    }
-
-  
+    }  
         const TheTitle = document.querySelector(".title").value
         const TheDescription = document.querySelector(".description").value
         const TheDueDate = document.querySelector(".dueDate").value
@@ -25,10 +23,8 @@ export function Theclass(){
 
         for (let index = 0; index < radios.length; index++) {
             if (radios[index].checked) {
-              TheProjectNameValue = radios[index].classList.value
-              
+              TheProjectNameValue = radios[index].classList.value     
             }
-            
         }
 
         //Using the class creating objects
