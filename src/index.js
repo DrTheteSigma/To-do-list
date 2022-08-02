@@ -99,6 +99,7 @@ function EditToDo(){
     const editbutton = document.querySelectorAll(".edit")
     editbutton.forEach(button => {
         button.addEventListener("click", (e)=>{
+            console.log(Object_array)
             //grab the information from the parent of the button to edit
              const titleGetter = e.target.parentNode.parentNode.getElementsByTagName("div")[0].innerText
              const descriptionGetter = e.target.parentNode.parentNode.getElementsByTagName("div")[1].innerText
@@ -124,12 +125,13 @@ function EditToDo(){
                 const newdate = document.querySelector(".editdate").value
                 const newpriority = document.querySelector(".editpriority").value
 
-                alert(newpriority)
+                
                 Projects_array[indexGetter].title=newtitlegetter
                 Projects_array[indexGetter].description=newdescription
                 Projects_array[indexGetter].newdate=newdate
                 Projects_array[indexGetter].priority=newpriority
                 display()
+                EditToDo()
                   
             })
             

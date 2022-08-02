@@ -9,7 +9,7 @@ export function CreateDoms(title,description,date,priority,projectname,index){
     onetodo.classList.add(priority)
     onetodo.classList.add(index)
 
-    onetodo.innerHTML=`<input type="checkbox"><div>${title}</div><div>${description}</div><div>${date}</div><div>${projectname}</div><div><button class="deletebutton">delete</button><button class="edit">edit</button></div>`
+    onetodo.innerHTML=`<div>${title}</div><div>${description}</div><div>${date}</div><div>${projectname}</div><div><button class="deletebutton">delete</button><button class="edit">edit</button></div>`
     right.appendChild(onetodo)
     
 }
